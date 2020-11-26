@@ -27,9 +27,10 @@ int main()
 		total += Amount[No];
 		No++;
 	}
-	cout << "\t\tVAT  :";
+	cout << "\t\tVAT %:";
 	cin >> vat;
-	cout << "\t\t      " << vat * total << endl;
+	vat = vat / 100;
+	cout << "\t\tVatTt:" << vat * total << endl;
 	cout << "\t\tTotal:" << (vat * total) + total;
 }
 
